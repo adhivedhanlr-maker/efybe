@@ -66,8 +66,8 @@ const Footer = () => {
                         <ul className={`footer-list ${isSectionOpen('company') ? 'open' : ''}`} style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
                             <li><Link to="/about" style={{ color: '#94a3b8' }} className="hover-link">About Us</Link></li>
                             <li><Link to="/contact" style={{ color: '#94a3b8' }} className="hover-link">Contact</Link></li>
-                            <li><Link to="/legal" style={{ color: '#94a3b8' }} className="hover-link">Privacy Policy</Link></li>
-                            <li><Link to="/legal" style={{ color: '#94a3b8' }} className="hover-link">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy" style={{ color: '#94a3b8' }} className="hover-link">Privacy Policy</Link></li>
+                            <li><Link to="/terms" style={{ color: '#94a3b8' }} className="hover-link">Terms & Conditions</Link></li>
                         </ul>
                     </div>
 

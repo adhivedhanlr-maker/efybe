@@ -83,6 +83,10 @@ const Home = () => {
                         </p>
                     </div>
 
+                    <div className="swipe-indicator" style={{ marginInline: 'auto' }}>
+                        <TrendingUp size={14} /> Swipe to browse
+                    </div>
+
                     {/* Horizontal Slider on Mobile */}
                     <div className="mobile-slider no-scrollbar" style={{ display: 'flex', gap: '1.5rem', overflowX: 'auto', paddingBottom: '1rem', scrollSnapType: 'x mandatory' }}>
                         {whatWeDo.map((item, index) => (
@@ -264,7 +268,9 @@ const Home = () => {
           .expertise-icon { margin-inline: auto !important; }
           .expertise-desc { display: none !important; }
           .expertise-card h4 { font-size: 0.95rem !important; margin-bottom: 0 !important; }
-          .cta-card .btn { width: 100% !important; }
+          .cta-card { padding: 4rem 1.5rem !important; }
+          .cta-card h2 { font-size: 1.75rem !important; }
+          .cta-card .btn { width: 100% !important; margin-top: 1.5rem; }
           .product-visual { height: 280px !important; order: 2; }
           .product-content { order: 1; }
         }

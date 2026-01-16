@@ -31,6 +31,9 @@ const LoanDesk = () => {
 
             <section className="section-padding" id="features">
                 <div className="container">
+                    <div className="swipe-indicator">
+                        <Zap size={14} /> Swipe to explore features
+                    </div>
                     {/* Feature Slider on Mobile */}
                     <div className="mobile-slider no-scrollbar" style={{ display: 'none', gap: '1.25rem', overflowX: 'auto', paddingBottom: '1.5rem', scrollSnapType: 'x mandatory', marginBottom: '3rem' }}>
                         {features.map((f, i) => (

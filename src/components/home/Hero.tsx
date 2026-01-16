@@ -68,28 +68,28 @@ const Hero = () => {
             <style>{`
         @media (max-width: 768px) {
           .hero-section { 
-            padding: 2.5rem 0 4rem 0 !important; 
-            max-height: 85vh;
+            padding: 4rem 0 3rem 0 !important; 
+            max-height: 90vh;
           }
           .hero-grid { 
             grid-template-columns: 1fr !important; 
-            gap: 2.5rem !important; 
-            text-align: left; 
+            gap: 2rem !important; 
+            text-align: center !important; 
             display: flex !important;
             flex-direction: column;
           }
-          .hero-title { font-size: 2rem !important; margin-bottom: 0.75rem !important; }
-          .hero-subtext { font-size: 1rem !important; margin-bottom: 2rem !important; }
-          .hero-actions { flex-direction: column; gap: 0.75rem !important; width: 100%; }
-          .hero-actions .btn { width: 100% !important; padding: 1rem !important; }
+          .hero-title { font-size: 2.25rem !important; margin-bottom: 1rem !important; }
+          .hero-subtext { font-size: 1.05rem !important; margin-bottom: 2.5rem !important; }
+          .hero-actions { flex-direction: column; gap: 0.875rem !important; width: 100%; }
+          .hero-actions .btn { width: 100% !important; padding: 1.125rem !important; }
           .hero-media { 
-            width: 85% !important; 
+            width: 90% !important; 
             margin: 0 auto !important;
-            order: 2;
+            order: 1;
           }
-          .hero-media img { border-radius: 16px !important; }
-          .hero-content { order: 1; }
-          .hero-pill { font-size: 0.75rem !important; margin-bottom: 1rem !important; }
+          .hero-media img { border-radius: 20px !important; }
+          .hero-content { order: 2; }
+          .hero-pill { font-size: 0.8rem !important; margin-bottom: 1.25rem !important; margin-inline: auto; }
         }
       `}</style>
         </section>
