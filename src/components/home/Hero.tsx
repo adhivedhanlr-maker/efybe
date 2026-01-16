@@ -28,7 +28,8 @@ const Hero = () => {
                     <div className="hero-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(37, 99, 235, 0.08)', color: 'var(--secondary-blue)', borderRadius: '100px', fontSize: '0.8rem', fontWeight: 600, marginBottom: '1.5rem', letterSpacing: '0.02em' }}>
                         <MousePointer2 size={14} /> Smart Automation for Modern Businesses
                     </div>
-                    <h1 className="hero-title" style={{ fontSize: 'clamp(1.875rem, 5vw, 4.5rem)', marginBottom: '1rem', lineHeight: 1.1, fontWeight: 700 }}>
+                    <h1 className="hero-title" style={{ fontSize: 'clamp(1.875rem, 5vw, 3.5rem)', marginBottom: '1rem', lineHeight: 1.1, fontWeight: 700 }}>
+                        eFlybe Technologies —<br />
                         Smart Technology.<br />
                         <span className="text-gradient">Real Business Impact.</span>
                     </h1>
