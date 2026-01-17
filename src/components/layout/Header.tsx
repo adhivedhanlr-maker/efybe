@@ -91,46 +91,56 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
-            {isOpen && (
-                <div
-                    style={{
-                        position: 'fixed',
-                        top: '100%',
-                        left: 0,
-                        width: '100%',
-                        height: '100vh',
-                        backgroundColor: 'var(--white)',
-                        padding: '2.5rem 1.5rem',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '1.5rem',
-                        zIndex: 100,
-                        borderTop: '1px solid #f1f5f9'
-                    }}
-                    className="mobile-nav-panel"
-                >
+            {/* Mobile Menu Overlay */}
+            <div
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100dvh',
+                    backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                    zIndex: 1000,
+                    padding: '2rem 1.5rem',
+                    flexDirection: 'column',
+                    gap: '1.5rem',
+                    display: isOpen ? 'flex' : 'none',
+                    backdropFilter: 'blur(10px)',
+                    transition: 'opacity 0.3s ease'
+                }}
+                className="mobile-nav-full"
+            >
+                <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '2rem' }}>
+                    <button onClick={() => setIsOpen(false)} style={{ background: 'none', border: 'none', padding: '0.5rem' }}>
+                        <X size={32} color="var(--primary-navy)" />
+                    </button>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', textAlign: 'center' }}>
                     {navLinks.map((link) => (
                         <Link
                             key={link.path}
                             to={link.path}
                             onClick={() => setIsOpen(false)}
                             style={{
-                                fontSize: '1.25rem',
+                                fontSize: '1.75rem',
                                 fontWeight: 600,
-                                padding: '1rem 0',
-                                borderBottom: '1px solid #f8fafc',
                                 color: location.pathname === link.path ? 'var(--secondary-blue)' : 'var(--text-main)'
                             }}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <Link to="/contact" onClick={() => setIsOpen(false)} className="btn btn-primary" style={{ marginTop: '2rem', padding: '1.25rem' }}>
+                    <Link
+                        to="/contact"
+                        onClick={() => setIsOpen(false)}
+                        className="btn btn-primary"
+                        style={{ marginTop: '2rem', padding: '1.25rem', fontSize: '1.1rem' }}
+                    >
                         Get Started
                     </Link>
                 </div>
-            )}
+            </div>
 
             <style>{`
         @media (max-width: 768px) {

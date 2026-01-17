@@ -29,6 +29,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--background-light);
@@ -163,4 +169,36 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.swipe-indicator {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--secondary-blue);
+  background: rgba(37, 99, 235, 0.05);
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .swipe-indicator {
+    display: inline-flex;
+  }
 }

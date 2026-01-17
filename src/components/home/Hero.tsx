@@ -68,28 +68,33 @@ const Hero = () => {
             <style>{`
         @media (max-width: 768px) {
           .hero-section { 
-            padding: 4rem 0 3rem 0 !important; 
-            max-height: 90vh;
+            padding: 8rem 0 6rem 0 !important; 
+            min-height: 85vh !important;
+            display: flex;
+            align-items: center;
           }
           .hero-grid { 
             grid-template-columns: 1fr !important; 
-            gap: 2rem !important; 
             text-align: center !important; 
-            display: flex !important;
-            flex-direction: column;
+            position: relative;
+            z-index: 1;
           }
-          .hero-title { font-size: 2.25rem !important; margin-bottom: 1rem !important; }
-          .hero-subtext { font-size: 1.05rem !important; margin-bottom: 2.5rem !important; }
-          .hero-actions { flex-direction: column; gap: 0.875rem !important; width: 100%; }
-          .hero-actions .btn { width: 100% !important; padding: 1.125rem !important; }
+          .hero-title { font-size: 2.5rem !important; margin-bottom: 1.25rem !important; }
+          .hero-subtext { font-size: 1.1rem !important; margin-bottom: 3rem !important; opacity: 0.9; }
+          .hero-actions { flex-direction: column; gap: 1rem !important; width: 100%; max-width: 320px; margin: 0 auto; }
+          .hero-actions .btn { width: 100% !important; padding: 1.25rem !important; }
           .hero-media { 
-            width: 90% !important; 
-            margin: 0 auto !important;
-            order: 1;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 140% !important; 
+            opacity: 0.08 !important;
+            pointer-events: none;
+            z-index: -1;
           }
-          .hero-media img { border-radius: 20px !important; }
-          .hero-content { order: 2; }
-          .hero-pill { font-size: 0.8rem !important; margin-bottom: 1.25rem !important; margin-inline: auto; }
+          .hero-content { position: relative; z-index: 10; }
+          .hero-pill { font-size: 0.85rem !important; margin-bottom: 1.5rem !important; margin-inline: auto; }
         }
       `}</style>
         </section>
