@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Base routing
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import { Home, About, LoanDesk, Contact, Legal } from './pages';
+import { Home, About, LoanDesk, Contact, Legal, Enquiry } from './pages';
 
 import ScrollToTop from './components/common/ScrollToTop';
 
