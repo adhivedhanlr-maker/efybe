@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 
 import logoText from '../../assets/logo-text.png';
 import logoIcon from '../../assets/logo-icon.png';
+import LanguageSwitcher from '../common/LanguageSwitcher';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -70,6 +71,7 @@ const Header = () => {
                             {link.name}
                         </Link>
                     ))}
+                    <LanguageSwitcher />
                     <Link to="/contact" className="btn btn-primary" style={{ padding: '0.6rem 1.5rem' }}>
                         Get Started
                     </Link>
@@ -131,6 +133,9 @@ const Header = () => {
                             {link.name}
                         </Link>
                     ))}
+                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+                        <LanguageSwitcher />
+                    </div>
                     <Link
                         to="/contact"
                         onClick={() => setIsOpen(false)}
