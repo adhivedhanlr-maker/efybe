@@ -27,10 +27,10 @@ const Hero = () => {
                     transition={{ duration: 0.6 }}
                     className="hero-content"
                 >
-                    {/* Hero Branding */}
-                    <div className="hero-branding" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: '1rem', marginBottom: '2.5rem' }}>
-                        <img src={logoIcon} alt="eFlybe Icon" style={{ height: 'clamp(44px, 5vw, 64px)', objectFit: 'contain' }} />
-                        <img src={logoText} alt="eFlybe" style={{ height: 'clamp(38px, 4vw, 54px)', objectFit: 'contain' }} />
+                    {/* Mobile Only Branding */}
+                    <div className="hero-mobile-branding" style={{ display: 'none', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '0.8rem', marginBottom: '2rem' }}>
+                        <img src={logoIcon} alt="eFlybe Icon" style={{ height: '44px', objectFit: 'contain' }} />
+                        <img src={logoText} alt="eFlybe" style={{ height: '38px', objectFit: 'contain' }} />
                     </div>
 
                     <div className="hero-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(37, 99, 235, 0.08)', color: 'var(--secondary-blue)', borderRadius: '100px', fontSize: '0.8rem', fontWeight: 600, marginBottom: '1.5rem', letterSpacing: '0.02em' }}>
@@ -85,7 +85,7 @@ const Hero = () => {
             grid-template-columns: 1fr !important; 
             text-align: center !important; 
           }
-          .hero-branding { justify-content: center !important; margin-bottom: 2rem !important; }
+          .hero-mobile-branding { display: flex !important; }
           .hero-title { font-size: 2.25rem !important; margin-bottom: 1.25rem !important; }
           .hero-subtext { font-size: 1.05rem !important; margin-bottom: 2.5rem !important; }
           .hero-actions { flex-direction: column; gap: 1rem !important; width: 100%; max-width: 320px; margin: 0 auto; }

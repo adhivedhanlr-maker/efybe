@@ -143,6 +143,10 @@ const Header = () => {
             </div>
 
             <style>{`
+          .logo-text { height: 32px !important; }
+          .logo-icon { height: 36px !important; }
+          header { padding: 1rem 0 !important; }
+        }
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-toggle { display: block !important; }
