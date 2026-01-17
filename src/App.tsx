@@ -17,6 +17,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/loandesk" element={<LoanDesk />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/enquiry/:serviceId" element={<Enquiry />} />
             <Route path="/privacy" element={<Legal type="privacy" />} />
             <Route path="/terms" element={<Legal type="terms" />} />
             <Route path="/disclaimer" element={<Legal type="disclaimer" />} />
