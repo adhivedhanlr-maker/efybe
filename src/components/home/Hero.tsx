@@ -28,9 +28,9 @@ const Hero = () => {
                     className="hero-content"
                 >
                     {/* Mobile Only Branding */}
-                    <div className="hero-mobile-branding" style={{ display: 'none', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
-                        <img src={logoIcon} alt="eFlybe Icon" style={{ height: '48px', objectFit: 'contain' }} />
-                        <img src={logoText} alt="eFlybe" style={{ height: '32px', objectFit: 'contain' }} />
+                    <div className="hero-mobile-branding" style={{ display: 'none', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '0.6rem', marginBottom: '1.5rem' }}>
+                        <img src={logoIcon} alt="eFlybe Icon" style={{ height: '32px', objectFit: 'contain' }} />
+                        <img src={logoText} alt="eFlybe" style={{ height: '28px', objectFit: 'contain' }} />
                     </div>
 
                     <div className="hero-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(37, 99, 235, 0.08)', color: 'var(--secondary-blue)', borderRadius: '100px', fontSize: '0.8rem', fontWeight: 600, marginBottom: '1.5rem', letterSpacing: '0.02em' }}>
