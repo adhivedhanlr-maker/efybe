@@ -11,7 +11,7 @@ const Hero = () => {
         <section
             style={{
                 position: 'relative',
-                padding: 'min(4vh, 2rem) 0 min(15vh, 10rem) 0',
+                padding: 'min(4vh, 2rem) 0 min(8vh, 5rem) 0',
                 minHeight: 'auto',
                 display: 'flex',
                 alignItems: 'center',

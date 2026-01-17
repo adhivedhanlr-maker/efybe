@@ -76,7 +76,7 @@ button {
 }
 
 .section-padding {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 /* Scroll Utilities */
@@ -91,7 +91,7 @@ button {
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
   }
 
   h1 {
