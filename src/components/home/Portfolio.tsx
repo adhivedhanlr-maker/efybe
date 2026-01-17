@@ -65,13 +65,12 @@ const Portfolio = () => {
                                 backgroundColor: '#f8fafc',
                                 border: '1px solid #e2e8f0',
                                 textDecoration: 'none',
-                                position: 'relative',
-                                group: 'true'
+                                position: 'relative'
                             }}
                         >
                             <div className="portfolio-image-wrapper" style={{
                                 position: 'relative',
-                                pt: '56.25%', // 16:9 aspect ratio
+                                paddingTop: '56.25%', // 16:9 aspect ratio
                                 overflow: 'hidden',
                                 height: '240px'
                             }}>
