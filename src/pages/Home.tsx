@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Slideshow from '../components/common/Slideshow';
+import Portfolio from '../components/home/Portfolio';
 import ss1 from '../assets/loandesk/ss1.png';
 import ss2 from '../assets/loandesk/ss2.png';
 import ss3 from '../assets/loandesk/ss3.png';
@@ -235,6 +236,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <Portfolio />
 
             {/* CTA */}
             <section className="section-padding" style={{ textAlign: 'center' }}>
